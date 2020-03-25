@@ -4,7 +4,7 @@
 # project: w35
 queue: normal
 walltime: 3:30:00
-jobname: 025deg_jra55_ryf
+jobname: 025deg_jra55_ryf_1Kv
 ncpus: 1824
 
 # Force payu to always find, and save, files in this short (or scratch) project directory
@@ -54,4 +54,4 @@ platform:
 
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh

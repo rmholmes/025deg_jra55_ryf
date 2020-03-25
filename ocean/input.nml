@@ -556,6 +556,10 @@
 	hwf_diffusivity     = .false.
 	hwf_min_diffusivity = 2.e-6
 	hwf_N0_2Omega       = 20.0
+        j09_diffusivity = .true.
+        j09_bgmin = 1.0e-6
+        j09_bgmax = 1.0e-6
+        j09_lat = 20.0
 /
 
  &ocean_vert_pp_nml
