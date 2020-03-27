@@ -1,14 +1,14 @@
 # PBS configuration
 # If submitting to a different project to your default uncomment line below 
 # and change project code as appropriate
-project: v45
+# project: v45
 queue: normal
 walltime: 4:00:00
 jobname: 025deg_jra55_ryf
 ncpus: 1824
 
 # Force payu to always find, and save, files in this short (or scratch) project directory
-# shortpath: /scratch/w35
+shortpath: /scratch/e14
 
 # Model configuration
 name: common
