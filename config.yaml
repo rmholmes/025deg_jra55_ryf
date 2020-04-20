@@ -3,7 +3,7 @@
 # and change project code as appropriate
 project: e14
 queue: normal
-walltime: 4:00:00
+walltime: 4:30:00
 jobname: 025deg_jra55_ryf
 ncpus: 1824
 
@@ -25,7 +25,7 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /g/data4/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
+      exe: /g/data/e14/rmh561/access-om2/bin/fms_ACCESS-OM_ce6567d_libaccessom2_1bb8904.x
       input: /g/data4/ik11/inputs/access-om2/input_rc/mom_025deg
       ncpus: 1455
 
@@ -54,4 +54,4 @@ platform:
 
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh
