@@ -13,26 +13,26 @@ shortpath: /scratch/e14
 # Model configuration
 name: common
 model: access-om2
-input: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55
+input: /g/data/ik11/inputs/access-om2/input_rc/common_025deg_jra55
 submodels:
     - name: atmosphere
       model: yatm
-      exe: /g/data4/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
+      exe: /g/data/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
       input: 
-            - /g/data4/ik11/inputs/access-om2/input_rc/yatm_025deg
+            - /g/data/ik11/inputs/access-om2/input_rc/yatm_025deg
             - /g/data1a/ua8/JRA55-do/RYF/v1-3/
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: /g/data4/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
-      input: /g/data4/ik11/inputs/access-om2/input_rc/mom_025deg
+      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
+      input: /g/data/ik11/inputs/access-om2/input_rc/mom_025deg
       ncpus: 1455
 
     - name: ice
       model: cice5
-      exe: /g/data4/ik11/inputs/access-om2/bin/cice_auscom_1440x1080_480p_d3e8bdf_libaccessom2_1bb8904.exe
-      input: /g/data4/ik11/inputs/access-om2/input_rc/cice_025deg
+      exe: /g/data/ik11/inputs/access-om2/bin/cice_auscom_1440x1080_480p_d3e8bdf_libaccessom2_1bb8904.exe
+      input: /g/data/ik11/inputs/access-om2/input_rc/cice_025deg
       ncpus: 361
 
 # Collation
@@ -41,17 +41,17 @@ collate:
   mem: 30GB
   ncpus: 4
   queue: express
-  exe: /g/data4/ik11/inputs/access-om2/bin/mppnccombine
+  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine
 
 # Misc
 runlog: true
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0
-qsub_flags: -lother=hyperthread -W umask=027 -l storage=gdata/hh5+gdata/ik11+scratch/e14+gdata/ua8
+qsub_flags: -lother=hyperthread -W umask=027
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:
     nodesize: 48
 
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh
