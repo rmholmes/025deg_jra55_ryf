@@ -213,7 +213,7 @@
  &ocean_nphysicsC_nml
     use_this_module=.true.
     do_neutral_diffusion=.true.
-    do_gm_skewsion=.true.
+    do_gm_skewsion=.false.
     gm_skewsion_modes=.false.
     gm_skewsion_bvproblem=.true.
     number_bc_modes=2
