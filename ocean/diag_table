@@ -152,7 +152,6 @@ ACCESS-OM2-025
 "ocean_model","temp_vdiffuse_impl","temp_vdiffuse_impl", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_vdiffuse_diff_cbt_conv","temp_vdiffuse_diff_cbt_conv", "ocean_heat","all",.true.,"none",1
 "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler","ocean_heat","all",.true.,"none",1
-"ocean_model","sfc_hflux_pme","sfc_hflux_pme","ocean_heat","all",.true.,"none",1
 
 # 3d fields - monthly output
 "ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
