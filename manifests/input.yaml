@@ -1,21 +1,21 @@
 format: yamanifest
 version: 1.0
 ---
-work/INPUT/rmp_jra55_cice_conserve.nc:
-  fullpath: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55/rmp_jra55_cice_conserve.nc
+work/INPUT/rmp_jra55_cice_1st_conserve.nc:
+  fullpath: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55/rmp_jra55_cice_1st_conserve.nc
   hashes:
-    binhash: 8064ff6cf375fbecdab51ba391405dac
-    md5: 2f76b8ae916cdecd5e57c0200140126f
-work/INPUT/rmp_jra55_cice_smooth.nc:
-  fullpath: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55/rmp_jra55_cice_smooth.nc
-  hashes:
-    binhash: 73010e14a828ba35a638afe2ba2e690d
-    md5: 08da790afd18eff1c6742af7e4b3c1c2
-work/INPUT/rmp_jrat_to_cict_CONSERV.nc:
-  fullpath: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55/rmp_jrat_to_cict_CONSERV.nc
-  hashes:
-    binhash: 7885358eda2c889acae3c611e4e034b1
+    binhash: 6a4ec2be5aa4ca3d776153fe93f56289
     md5: 4613ba57be92deac669982a1085632c6
+work/INPUT/rmp_jra55_cice_2nd_conserve.nc:
+  fullpath: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55/rmp_jra55_cice_2nd_conserve.nc
+  hashes:
+    binhash: b2376b45300338ef8a7fe7693f8079e8
+    md5: 2f76b8ae916cdecd5e57c0200140126f
+work/INPUT/rmp_jra55_cice_patch.nc:
+  fullpath: /g/data4/ik11/inputs/access-om2/input_rc/common_025deg_jra55/rmp_jra55_cice_patch.nc
+  hashes:
+    binhash: 54d23cc997ef0d72ede44a31a798a48f
+    md5: 08da790afd18eff1c6742af7e4b3c1c2
 work/atmosphere/INPUT/RYF.q_10.1984_1985.nc:
   fullpath: /g/data1a/ua8/JRA55-do/RYF/v1-3/RYF.q_10.1984_1985.nc
   hashes:
