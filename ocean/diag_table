@@ -65,6 +65,10 @@ ACCESS-OM2-025
 #"ocean_model","temp_yflux_ndiffuse","temp_yflux_ndiffuse","ocean","all",.true.,"none",2
 "ocean_model","diff_cbt_t","diff_cbt_t",    "ocean","all",.true.,"none",2
 
+# aredi and agm fields:
+"ocean_model","aredi_3d","aredi_3d",    "ocean","all",.true.,"none",2
+"ocean_model","agm_3d","agm_3d",    "ocean","all",.true.,"none",2
+
 # Temperature-binned transports
 "ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",1
 "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",1
@@ -152,7 +156,6 @@ ACCESS-OM2-025
 "ocean_model","temp_vdiffuse_impl","temp_vdiffuse_impl", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_vdiffuse_diff_cbt_conv","temp_vdiffuse_diff_cbt_conv", "ocean_heat","all",.true.,"none",1
 "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler","ocean_heat","all",.true.,"none",1
-"ocean_model","sfc_hflux_pme","sfc_hflux_pme","ocean_heat","all",.true.,"none",1
 
 # 3d fields - monthly output
 "ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
