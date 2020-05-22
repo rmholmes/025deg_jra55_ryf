@@ -25,7 +25,7 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /g/data/e14/rmh561/access-om2/bin/fms_ACCESS-OM_bcf8244_libaccessom2_1bb8904.x
+      exe: /g/data/e14/rmh561/access-om2/bin/fms_ACCESS-OM_da70c54_libaccessom2_1bb8904.x
       input: /g/data/ik11/inputs/access-om2/input_rc/mom_025deg
       ncpus: 1455
 
@@ -47,7 +47,7 @@ collate:
 runlog: true
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0
-qsub_flags: -lother=hyperthread -W umask=027 -l storage=gdata/hh5+gdata/ik11+scratch/e14+gdata/ua8
+qsub_flags: -lother=hyperthread -W umask=027
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:
     nodesize: 48
