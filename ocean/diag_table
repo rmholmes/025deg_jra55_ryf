@@ -8,7 +8,7 @@ ACCESS-OM2-025
 # https://github.com/COSIMA/access-om2/wiki/Technical-documentation#MOM5-diagnostics-list
 
 #output files
-"ocean",            1,  "months", 1, "days", "time",
+"ocean",            12,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
 
@@ -35,20 +35,20 @@ ACCESS-OM2-025
 "ocean_model","temp","temp",            "ocean","all",.true.,"none",2
 #"ocean_model","pot_temp","pot_temp",    "ocean","all",.true.,"none",2
 "ocean_model","salt","salt",            "ocean","all",.true.,"none",2
-"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
+#"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
-"ocean_model","wt","wt",                "ocean","all",.true.,"none",2
+#"ocean_model","wt","wt",                "ocean","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean","all",.true.,"none",2
-"ocean_model","pot_rho_0","pot_rho_0",  "ocean","all",.true.,"none",2
+#"ocean_model","pot_rho_0","pot_rho_0",  "ocean","all",.true.,"none",2
 #"ocean_model","pot_rho_2","pot_rho_2",  "ocean","all",.true.,"none",2
-"ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
-"ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
+#"ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
+#"ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
 #"ocean_model","tx_trans_rho","tx_trans_rho","ocean","all",.true.,"none",2
 "ocean_model","ty_trans_rho","ty_trans_rho","ocean","all",.true.,"none",2
 #"ocean_model","temp_xflux_adv","temp_xflux_adv","ocean","all",.true.,"none",2
 #"ocean_model","temp_yflux_adv","temp_yflux_adv","ocean","all",.true.,"none",2
-"ocean_model","diff_cbt_t","diff_cbt_t",    "ocean","all",.true.,"none",2
+#"ocean_model","diff_cbt_t","diff_cbt_t",    "ocean","all",.true.,"none",2
 
 # 2d fields
 "ocean_model","sea_level","sea_level",             "ocean","all",.true.,"none",2
@@ -61,9 +61,9 @@ ACCESS-OM2-025
 #"ocean_model","ice_calving","ice_calving",             "ocean","all",.true.,"none",2
 #"ocean_model","evap","evap",             "ocean","all",.true.,"none",2
 #"ocean_model","melt","melt",             "ocean","all",.true.,"none",2
-"ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore","ocean","all",.true.,"none",2
-"ocean_model","sfc_salt_flux_ice","sfc_salt_flux_ice","ocean","all",.true.,"none",2
-"ocean_model","sfc_salt_flux_coupler","sfc_salt_flux_coupler","ocean","all",.true.,"none",2
+#"ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore","ocean","all",.true.,"none",2
+#"ocean_model","sfc_salt_flux_ice","sfc_salt_flux_ice","ocean","all",.true.,"none",2
+#"ocean_model","sfc_salt_flux_coupler","sfc_salt_flux_coupler","ocean","all",.true.,"none",2
 # see https://github.com/COSIMA/access-om2/issues/139
 "ocean_model","net_sfc_heating","net_sfc_heating", "ocean","all",.true.,"none",2
 "ocean_model","frazil_3d_int_z","frazil_3d_int_z", "ocean","all",.true.,"none",2
@@ -85,28 +85,28 @@ ACCESS-OM2-025
 "ocean_model","total_ocean_salt","total_ocean_salt", "ocean_scalar","all",.true.,"none",1
 "ocean_model","total_ocean_heat","total_ocean_heat", "ocean_scalar","all",.true.,"none",1
 "ocean_model","eta_global","eta_global", "ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_sfc_salt_flux_coupler","total_ocean_sfc_salt_flux_coupler","ocean_scalar","all",.true.,"none",1
+#"ocean_model","total_ocean_sfc_salt_flux_coupler","total_ocean_sfc_salt_flux_coupler","ocean_scalar","all",.true.,"none",1
 # see https://github.com/COSIMA/access-om2/issues/139
 # "ocean_model","total_net_sfc_heating","total_net_sfc_heating","ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_pme_river","total_ocean_pme_river" ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_river","total_ocean_river"         ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_runoff","total_ocean_runoff"       ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_calving","total_ocean_calving"     ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_melt","total_ocean_melt"           ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_evap","total_ocean_evap"           ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_lprec","total_ocean_lprec"         ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_fprec","total_ocean_fprec"         ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_runoff_heat","total_ocean_runoff_heat"   ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_calving_heat","total_ocean_calving_heat" ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_river_heat","total_ocean_river_heat"     ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_hflux_prec","total_ocean_hflux_prec"     ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_hflux_evap","total_ocean_hflux_evap"     ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_hflux_coupler","total_ocean_hflux_coupler"        ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_swflx","total_ocean_swflx"                        ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_swflx_vis","total_ocean_swflx_vis"                ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_lw_heat","total_ocean_lw_heat"                    ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_evap_heat","total_ocean_evap_heat"                ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_fprec_melt_heat","total_ocean_fprec_melt_heat"    ,"ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_calving_melt_heat","total_ocean_calving_melt_heat","ocean_scalar","all",.true.,"none",1
-"ocean_model","total_ocean_sens_heat","total_ocean_sens_heat"                ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_pme_river","total_ocean_pme_river" ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_river","total_ocean_river"         ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_runoff","total_ocean_runoff"       ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_calving","total_ocean_calving"     ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_melt","total_ocean_melt"           ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_evap","total_ocean_evap"           ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_lprec","total_ocean_lprec"         ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_fprec","total_ocean_fprec"         ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_runoff_heat","total_ocean_runoff_heat"   ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_calving_heat","total_ocean_calving_heat" ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_river_heat","total_ocean_river_heat"     ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_hflux_prec","total_ocean_hflux_prec"     ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_hflux_evap","total_ocean_hflux_evap"     ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_hflux_coupler","total_ocean_hflux_coupler"        ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_swflx","total_ocean_swflx"                        ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_swflx_vis","total_ocean_swflx_vis"                ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_lw_heat","total_ocean_lw_heat"                    ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_evap_heat","total_ocean_evap_heat"                ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_fprec_melt_heat","total_ocean_fprec_melt_heat"    ,"ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_calving_melt_heat","total_ocean_calving_melt_heat","ocean_scalar","all",.true.,"none",1
+# "ocean_model","total_ocean_sens_heat","total_ocean_sens_heat"                ,"ocean_scalar","all",.true.,"none",1
 
