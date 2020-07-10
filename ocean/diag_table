@@ -90,9 +90,10 @@ ACCESS-OM2-025
 "ocean_model","total_volume_seawater","total_volume_seawater" , "ocean_snap","all",.false.,"none",2
 
 # Monthly snapshots for spectra
-# "ocean_model","temp","temp", "ocean_snapshot","all",.false.,"none",1
-# "ocean_model","u","u", "ocean_snapshot","all",.false.,"none",1
-# "ocean_model","v","v", "ocean_snapshot","all",.false.,"none",1
+"ocean_model","temp","temp", "ocean_snapshot","all",.false.,"none",1
+"ocean_model","u","u", "ocean_snapshot","all",.false.,"none",1
+"ocean_model","v","v", "ocean_snapshot","all",.false.,"none",1
+"ocean_model","wt","wt", "ocean_snapshot","all",.false.,"none",1
 
 # Temperature-binned heat budget diagnostics
 "ocean_model","temp_tendency_on_nrho","temp_tendency_on_nrho", "ocean_wmass","all",.true.,"none",1
@@ -131,12 +132,14 @@ ACCESS-OM2-025
 # "ocean_model","u_sq","u_sq",                  "ocean_month","all",.true.,"none",2
 # "ocean_model","v_sq","v_sq",                  "ocean_month","all",.true.,"none",2
 # "ocean_model","wt_sq","wt_sq",                            "ocean_month","all",.true.,"none",2
-# "ocean_model","u","u",                  "ocean_month","all","rms","none",2
-# "ocean_model","v","v",                  "ocean_month","all","rms","none",2
-# "ocean_model","wt","wt",                            "ocean_month","all","rms","none",2
-# "ocean_model","temp_dxsq","temp_dxsq",                  "ocean_month","all",.true.,"none",2
-# "ocean_model","temp_dysq","temp_dysq",                  "ocean_month","all",.true.,"none",2
-# "ocean_model","temp_dzsq","temp_dzsq",                  "ocean_month","all",.true.,"none",2
+"ocean_model","u","u",                  "ocean_month","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean_month","all",.true.,"none",2
+"ocean_model","u","u_rms",                  "ocean_month","all","rms","none",2
+"ocean_model","v","v_rms",                  "ocean_month","all","rms","none",2
+"ocean_model","wt","wt_rms",                            "ocean_month","all","rms","none",2
+"ocean_model","temp_dxsq","temp_dxsq",                  "ocean_month","all",.true.,"none",2
+"ocean_model","temp_dysq","temp_dysq",                  "ocean_month","all",.true.,"none",2
+"ocean_model","temp_dzsq","temp_dzsq",                  "ocean_month","all",.true.,"none",2
 
 # # # Eulerian heat budget diagnostics (for check)
 # "ocean_model","temp_tendency","temp_tendency", "ocean_heat","all",.true.,"none",1
