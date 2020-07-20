@@ -167,8 +167,8 @@ ACCESS-OM2-025
 # "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler","ocean_heat","all",.true.,"none",1
 
 # # 3d fields - monthly output
-# "ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
-# "ocean_model","dzt","dzt",              "ocean_month","all",.true.,"none",2
+"ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
+"ocean_model","dzt","dzt",              "ocean_month","all",.true.,"none",2
 # "ocean_model","tx_trans","tx_trans",    "ocean_month","all",.true.,"none",2
 # "ocean_model","ty_trans","ty_trans",    "ocean_month","all",.true.,"none",2
 # "ocean_model","tx_trans_gm","tx_trans_gm",    "ocean_month","all",.true.,"none",2
