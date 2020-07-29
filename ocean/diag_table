@@ -67,12 +67,12 @@ ACCESS-OM2-025
 "ocean_model","diff_cbt_t","diff_cbt_t",    "ocean","all",.true.,"none",2
 
 # Temperature-binned transports
-# "ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",1
-# "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",1
-# "ocean_model","tx_trans_nrho_gm","tx_trans_nrho_gm", "ocean_wmass","all",.true.,"none",1
-# "ocean_model","ty_trans_nrho_gm","ty_trans_nrho_gm", "ocean_wmass","all",.true.,"none",1
-# "ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
-# "ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
+"ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","tx_trans_nrho_gm","tx_trans_nrho_gm", "ocean_wmass","all",.true.,"none",1
+"ocean_model","ty_trans_nrho_gm","ty_trans_nrho_gm", "ocean_wmass","all",.true.,"none",1
+"ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
+"ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
 
 # Temperature-binned heat transports:
 "ocean_model","temp_xflux_adv_on_nrho","temp_xflux_adv_on_nrho", "ocean_wmass","all",.true.,"none",1
