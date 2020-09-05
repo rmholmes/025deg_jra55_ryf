@@ -544,7 +544,7 @@
 	visc_cbu_iw=0.0
 	double_diffusion=.true.
 	Ricr=0.3
-	smooth_blmc=.false.
+	smooth_blmc=.true.
     kbl_standard_method=.false.
     smooth_ri_kmax_eq_kmu=.true.
 /
