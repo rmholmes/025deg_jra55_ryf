@@ -3,7 +3,7 @@
 #PBS -l ncpus=1
 #PBS -l wd
 #PBS -l walltime=4:00:00,mem=4GB
-#PBS -l storage=gdata/hh5+gdata/ik11+scratch/v45+scratch/x77+scratch/g40
+#PBS -l storage=gdata/hh5+gdata/ik11+scratch/v45+scratch/x77+scratch/g40+gdata/e14+scratch/e14
 #PBS -N sync
 
 # Set SYNCDIR to the path you want your data copied to.
@@ -12,7 +12,7 @@
 # but first add an experiment description - see /g/data/ik11/outputs/README
 # and make sure metadata.yaml is correct.
 # DOUBLE-CHECK SYNCDIR PATH IS UNIQUE SO YOU DON'T OVERWRITE EXISTING OUTPUT!
-SYNCDIR=/ERROR/SET/SYNCDIR/IN/sync_data.sh
+SYNCDIR=/g/data/e14/rmh561/access-om2/archive/025deg_jra55_ryf_nostress_cont
 
 exitcode=0
 help=false
