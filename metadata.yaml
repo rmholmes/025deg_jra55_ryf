@@ -1,7 +1,10 @@
-contact: Add your name here
-email: Add your email address here
-created: Add the date you started the experiment here (YYYY-MM-DD)
+contact: Ryan Holmes
+email: ryan.holmes@unsw.edu.au
+created: 2020-09-10
 description: >-
+  No stress case - run with option zero_surface_stress_exceptBL which
+  removes the surface stress except for the input into the BL mixing scheme.
+ 
   0.25 degree ACCESS-OM2 global model configuration under the RYF9091 Repeat
   Year Forcing strategy outlined by Stewart et al. (2020), 
   https://doi.org/10.1016/j.ocemod.2019.101557.
@@ -12,8 +15,7 @@ description: >-
   with all solid runoff converted to liquid runoff with no heat transfer.
   Spin up starts from a nominal year of 1 Jan 1900.
 note: >-
-  Provide details here of any important problems or changes during the experiment,
-  e.g. when additional diagnostics are output
+  No stress case
 keywords:
   - quarter
   - cosima
