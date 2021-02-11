@@ -165,6 +165,9 @@ ACCESS-OM2-025
 # "ocean_model","mixdownslope_temp","mixdownslope_temp", "ocean_heat","all",.true.,"none",1
 # "ocean_model","temp_sigma_diff","temp_sigma_diff", "ocean_heat","all",.true.,"none",1
 
+# Burchard method:
+"ocean_model","temp_adv_diss","temp_adv_diss", "ocean_heat","all",.true.,"none",1
+
 # #Abhi extras:
 # "ocean_model","temp_vdiffuse_impl","temp_vdiffuse_impl", "ocean_heat","all",.true.,"none",1
 # "ocean_model","temp_vdiffuse_diff_cbt_kppicon","temp_vdiffuse_diff_cbt_kppicon", "ocean_heat","all",.true.,"none",1
