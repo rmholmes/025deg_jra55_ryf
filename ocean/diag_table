@@ -168,6 +168,8 @@ ACCESS-OM2-025
 # Burchard method:
 "ocean_model","temp_adv_diss","temp_adv_diss", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_adv_diss_on_nrho","temp_adv_diss_on_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","temp_adv_dissrdz","temp_adv_dissrdz", "ocean_heat","all",.true.,"none",1
+"ocean_model","temp_adv_dissrdz_on_nrho","temp_adv_dissrdz_on_nrho", "ocean_wmass","all",.true.,"none",1
 
 # #Abhi extras:
 # "ocean_model","temp_vdiffuse_impl","temp_vdiffuse_impl", "ocean_heat","all",.true.,"none",1
