@@ -1,7 +1,7 @@
 # PBS configuration
 # If submitting to a different project to your default uncomment line below 
 # and change project code as appropriate
-project: e14
+project: v45
 queue: normal
 walltime: 4:00:00
 jobname: 025deg_jra55_ryf
@@ -13,26 +13,26 @@ shortpath: /scratch/e14
 # Model configuration
 name: common
 model: access-om2
-input: /g/data4/ik11/inputs/access-om2/input_20200530/common_025deg_jra55
+input: /g/data/ik11/inputs/access-om2/input_20200530/common_025deg_jra55
 submodels:
     - name: atmosphere
       model: yatm
-      exe: /g/data4/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
+      exe: /g/data/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
       input: 
-            - /g/data4/ik11/inputs/access-om2/input_20200530/yatm_025deg
-            - /g/data1a/ua8/JRA55-do/RYF/v1-3/
+            - /g/data/ik11/inputs/access-om2/input_20200530/yatm_025deg
+            - /g/data/ua8/JRA55-do/RYF/v1-3/
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: /g/data4/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
-      input: /g/data4/ik11/inputs/access-om2/input_20200530/mom_025deg
+      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
+      input: /g/data/ik11/inputs/access-om2/input_20200530/mom_025deg
       ncpus: 1455
 
     - name: ice
       model: cice5
-      exe: /g/data4/ik11/inputs/access-om2/bin/cice_auscom_1440x1080_480p_d3e8bdf_libaccessom2_1bb8904.exe
-      input: /g/data4/ik11/inputs/access-om2/input_20200530/cice_025deg
+      exe: /g/data/ik11/inputs/access-om2/bin/cice_auscom_1440x1080_480p_d3e8bdf_libaccessom2_1bb8904.exe
+      input: /g/data/ik11/inputs/access-om2/input_20200530/cice_025deg
       ncpus: 361
 
 # Collation
@@ -41,7 +41,7 @@ collate:
   mem: 30GB
   ncpus: 4
   queue: express
-  exe: /g/data4/ik11/inputs/access-om2/bin/mppnccombine
+  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine
 
 # Misc
 runlog: true
@@ -54,4 +54,4 @@ platform:
 
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh
