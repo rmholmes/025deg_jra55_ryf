@@ -16,7 +16,7 @@ SYNCDIR=/g/data/e14/rmh561/access-om2/archive/025deg_jra55_ryf_nostress_cont
 
 exitcode=0
 help=false
-dirtype=output
+dirtype=restart #output
 exclude="--exclude *.nc.*"
 rsyncflags="-vrltoD --safe-links"
 rmlocal=false
