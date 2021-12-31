@@ -10,8 +10,7 @@ ACCESS-OM2-025
 # output files
 "ocean_month",      1,  "months", 1, "days", "time",
 "ocean",            12,  "months", 1, "days", "time",
-"ocean_snap",       12,  "months", 1, "days", "time",
-"ocean_snapshot",   1,  "months", 1, "days", "time",
+"ocean_snap",       1,  "months", 1, "days", "time",
 "ocean_wmass",      1,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
@@ -41,11 +40,24 @@ ACCESS-OM2-025
 "ocean_model","dzt","dzt",              "ocean_month","all",.true.,"none",2
 "ocean_model","ty_trans","ty_trans",    "ocean_month","all",.true.,"none",2
 
-# # Temperature-binned transports
+# Temperature-binned transports
 "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",1
-# "ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
+"ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
+"ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",1
 
-# # Temperature-binned heat budget diagnostics
+# # Temperature-binned heat transports:
+"ocean_model","temp_xflux_adv_on_nrho","temp_xflux_adv_on_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","temp_yflux_adv_on_nrho","temp_yflux_adv_on_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","temp_xflux_submeso_on_nrho","temp_xflux_submeso_on_nrho", "ocean_wmass","all",.true.,"none",1
+"ocean_model","temp_yflux_submeso_on_nrho","temp_yflux_submeso_on_nrho", "ocean_wmass","all",.true.,"none",1
+
+# Snapshots for numerical mixing/tendency:
+"ocean_model","temp","temp", "ocean_snap","all",.false.,"none",1
+"ocean_model","dzt","dzt",   "ocean_snap","all",.false.,"none",1
+"ocean_model","total_volume_seawater","total_volume_seawater" , "ocean_snap","all",.false.,"none",2
+
+# Temperature-binned heat budget diagnostics
 "ocean_model","temp_vdiffuse_diff_cbt_on_nrho","temp_vdiffuse_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP_on_nrho","temp_nonlocal_KPP_on_nrho", "ocean_wmass","all",.true.,"none",1
 "ocean_model","temp_vdiffuse_sbc_on_nrho","temp_vdiffuse_sbc_on_nrho","ocean_wmass","all",.true.,"none",1
