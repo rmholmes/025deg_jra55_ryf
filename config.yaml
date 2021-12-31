@@ -38,8 +38,8 @@ submodels:
 # Collation
 collate:
   walltime: 3:00:00
-  mem: 100GB
-  ncpus: 8
+  mem: 192GB
+  ncpus: 16
   queue: express
   exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine
 
