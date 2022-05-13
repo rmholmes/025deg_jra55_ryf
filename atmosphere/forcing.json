@@ -1,62 +1,135 @@
 {
-  "description": "JRA55-do V1.4.0 RYF 1990-91 forcing",
+  "description": "ERA5 RYF 1990-91 forcing",
+  "forcing_product_name": "ERA5",
   "inputs": [
     {
-      "filename": "INPUT/RYF.rsds.1990_1991.nc",
-      "fieldname": "rsds",
-      "cname": "swfld_ai"
+        "coupling_field_name": "swfld_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.msdwswrf.1990_1991.nc",
+                "fieldname": "msdwswrf",
+                "units": "W m**-2"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.rlds.1990_1991.nc",
-      "fieldname": "rlds",
-      "cname": "lwfld_ai"
+        "coupling_field_name": "lwfld_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.msdwlwrf.1990_1991.nc",
+                "fieldname": "msdwlwrf",
+                "units": "W m**-2"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.prra.1990_1991.nc",
-      "fieldname": "prra",
-      "cname": "rain_ai"
+        "coupling_field_name": "rain_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.crr.1990_1991.nc",
+                "fieldname": "crr",
+                "units": "kg m**-2 s**-1"
+            },
+            {
+                "filename": "INPUT/RYF.lsrr.1990_1991.nc",
+                "fieldname": "lsrr",
+                "units": "kg m**-2 s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.prsn.1990_1991.nc",
-      "fieldname": "prsn",
-      "cname": "snow_ai"
+        "coupling_field_name": "snow_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.msr.1990_1991.nc",
+                "fieldname": "msr",
+                "units": "kg m**-2 s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.psl.1990_1991.nc",
-      "fieldname": "psl",
-      "cname": "press_ai"
+        "coupling_field_name": "press_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.msl.1990_1991.nc",
+                "fieldname": "msl",
+                "units": "Pa"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.friver.1990_1991.nc",
-      "fieldname": "friver",
-      "cname": "runof_ai",
-      "domain": "land"
+        "coupling_field_name": "runof_ai",
+        "realm": "land",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.friver.1990_1991.nc",
+                "fieldname": "friver"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.tas.1990_1991.nc",
-      "fieldname": "tas",
-      "cname": "tair_ai"
+        "coupling_field_name": "tair_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.2t.1990_1991.nc",
+                "fieldname": "t2m",
+                "units": "K"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.huss.1990_1991.nc",
-      "fieldname": "huss",
-      "cname": "qair_ai"
+        "coupling_field_name": "qair_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.2d.1990_1991.nc",
+                "fieldname": "d2m",
+                "units": "K"
+            },
+            {
+                "filename": "INPUT/RYF.sp.1990_1991.nc",
+                "fieldname": "sp",
+                "units": "Pa"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.uas.1990_1991.nc",
-      "fieldname": "uas",
-      "cname": "uwnd_ai"
+        "coupling_field_name": "uwnd_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.10u.1990_1991.nc",
+                "fieldname": "u10",
+                "units": "m s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.vas.1990_1991.nc",
-      "fieldname": "vas",
-      "cname": "vwnd_ai"
+        "coupling_field_name": "vwnd_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.10v.1990_1991.nc",
+                "fieldname": "v10",
+                "units": "m s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/RYF.licalvf.1990_1991.nc",
-      "fieldname": "licalvf",
-      "cname": "licalvf_ai",
-      "domain": "land"
+        "coupling_field_name": "licalvf_ai",
+        "realm": "land",
+        "input_fields": [
+            {
+                "filename": "INPUT/RYF.licalvf.1990_1991.nc",
+                "fieldname": "licalvf"
+            }
+        ]
     }
   ]
 }
