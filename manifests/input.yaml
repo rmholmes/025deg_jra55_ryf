@@ -11,16 +11,6 @@ work/INPUT/ERA5_MOM1_patch.nc:
   hashes:
     binhash: 57aa08f3996d5590f21805b04008c79e
     md5: 5ffdf77bb57e10e3ede874752e4f6c6d
-work/atmosphere/INPUT/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_conserve.nc
-  hashes:
-    binhash: 9af5ca3052f6d5ed5d9139a23f121cf5
-    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
-work/atmosphere/INPUT/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_patch.nc
-  hashes:
-    binhash: 2bab214c23d2eebc6d368e003fb641e6
-    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
 work/atmosphere/INPUT/RYF.10u.1990_1991.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/chunked/RYF.10u.1990_1991.nc
   hashes:
@@ -87,10 +77,10 @@ work/atmosphere/INPUT/RYF.sp.1990_1991.nc:
     binhash: e03e215331760d1fa87b4029a87dd682
     md5: 9ed21199287047166dc2324778a40648
 work/atmosphere/INPUT/rmp_jrar_to_cict_CONSERV.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/yatm_025deg/rmp_jrar_to_cict_CONSERV.nc
   hashes:
-    binhash: 6563b5e196a4ccb9a189dc533893bbb2
-    md5: 10f0b5ea6b8102a03ad1140e5163a0f7
+    binhash: 5c9dc38068da3431afd3aa342bebbbcc
+    md5: 2e8cf1844fe7a1156ef47170a6eb5ef1
 work/ice/RESTART/grid.nc:
   copy: true
   fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_025deg/grid.nc

@@ -21,7 +21,7 @@ submodels:
       model: yatm
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_70e2c46.exe
       input:
-            - /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5
+            - /g/data/ik11/inputs/access-om2/input_20201102/yatm_025deg
             - /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/chunked
       ncpus: 1
 
