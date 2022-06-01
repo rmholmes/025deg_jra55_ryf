@@ -7,7 +7,7 @@
     ! e.g. one of 100, 120, 144, 150, 180, 200, 225, 240, 300, 360, 400, 450, 600, 720, 900,
     ! 1200, 1800, or 3600 seconds.
     ! The model is usually stable with a 1200s timestep, including in the initial spinup from rest.
-    ice_ocean_timestep = 1200
+    ice_ocean_timestep = 900
 &end
 
 &date_manager_nml
